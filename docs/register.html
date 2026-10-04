@@ -2,25 +2,37 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Register</title>
 
     <link rel="stylesheet" href="/style.css">
+
 </head>
 
 <body>
 
     <div class="login-container">
 
-        <h1>Login</h1>
+        <h1>Create Account</h1>
 
-        <form id="loginForm">
+        <form id="registerForm">
 
             <input
                 type="text"
                 id="username"
                 placeholder="Username"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
                 required
             >
 
@@ -32,25 +44,26 @@
             >
 
             <button type="submit">
-                Login
+                Register
             </button>
 
         </form>
 
         <p id="message"></p>
+
         <p style="text-align:center; margin-top:15px;">
 
-    Don't have an account?
+            Already have an account?
 
-    <a href="/register.html">
-        Register
-    </a>
+            <a href="/index.html">
+                Login
+            </a>
 
-</p>
+        </p>
 
     </div>
 
-    <script src="/js/login.js"></script>
+    <script src="/js/register.js"></script>
 
 </body>
 

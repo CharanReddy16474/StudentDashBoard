@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Dashboard</title>
+
+    <link rel="stylesheet" href="/home.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">S</div>
+            <span>StudentHub</span>
+        </div>
+
+        <nav>
+
+            <a href="#" class="nav-item active">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="#students" class="nav-item">
+                <span>👨‍🎓</span>
+                Students
+            </a>
+
+            <a href="#about" class="nav-item">
+                <span>ℹ</span>
+                About
+            </a>
+
+        </nav>
+
+        <button id="logout" class="logout-btn">
+            ↪ Logout
+        </button>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div>
+                <p class="small-text">Student Management System</p>
+                <h1>Dashboard</h1>
+            </div>
+
+            <div class="profile">
+
+                <div class="avatar">
+                    R
+                </div>
+
+                <div>
+                    <strong id="username">User</strong>
+                    <p>Administrator</p>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-label">WELCOME BACK 👋</p>
+
+                <h2>
+                    Manage your students
+                    <span>smarter.</span>
+                </h2>
+
+                <p>
+                    Keep track of student information, manage records,
+                    and access everything from one powerful dashboard.
+                </p>
+
+                <a href="#students" class="hero-button">
+                    View Students →
+                </a>
+
+            </div>
+
+            <div class="hero-shape">
+                <div class="floating-card card-one">
+                    🎓
+                    <span>Students</span>
+                    <strong id="heroStudentCount">0</strong>
+                </div>
+
+                <div class="floating-card card-two">
+                    🔐
+                    <span>Security</span>
+                    <strong>JWT Protected</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+                    👨‍🎓
+                </div>
+
+                <div>
+                    <p>Total Students</p>
+                    <h3 id="totalStudents">0</h3>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">
+                    📚
+                </div>
+
+                <div>
+                    <p>Student Records</p>
+                    <h3>Active</h3>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+                    🔒
+                </div>
+
+                <div>
+                    <p>Security</p>
+                    <h3>Protected</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Students -->
+        <section id="students" class="students-section">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="small-text">DATABASE</p>
+                    <h2>Students</h2>
+                </div>
+
+                <button id="addStudentBtn" class="add-btn">
+    + Add Student
+</button>
+
+            </div>
+
+
+            <!-- Search -->
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search students..."
+                >
+
+            </div>
+
+
+            <!-- Student Data -->
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                          <th>Roll No</th>
+<th>Student Name</th>
+<th>Percentage</th>
+<th>Branch</th>
+<th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="studentTable">
+
+                        <tr>
+
+                            <td colspan="5" class="loading">
+                                Loading students...
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about" class="about-section">
+
+            <div>
+
+                <p class="small-text">ABOUT PROJECT</p>
+
+                <h2>
+                    Built with modern
+                    <span>technology.</span>
+                </h2>
+
+                <p>
+                    StudentHub is a full-stack student management
+                    application built using Spring Boot, MySQL,
+                    Spring Security and JWT authentication.
+                </p>
+
+            </div>
+
+            <div class="tech-stack">
+
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+                <span>JWT</span>
+                <span>JavaScript</span>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <p>
+                © 2026 StudentHub · Built with Spring Boot
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="/js/home.js"></script>
+
+</body>
+
+</html>
